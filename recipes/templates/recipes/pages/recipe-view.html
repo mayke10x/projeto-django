@@ -4,6 +4,12 @@
 
 {% block content %}
     <div class="main-content main-content-detail container">
-        {% include 'recipes/partials/recipe.html' %}
+        {% if recipe %}
+            {% include 'recipes/partials/recipe.html' %}
+        {% else %}
+            <div class="center m-y">
+                <h1>A receita informada não existe.</h1>
+            </div>
+        {% endif %}
     </div>
 {% endblock content %}
