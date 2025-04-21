@@ -1,3 +1,5 @@
+recipes/migrations
+
 # Django #
 *.log
 *.pot
